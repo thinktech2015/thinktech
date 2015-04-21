@@ -2085,3 +2085,23 @@ margin-bottom: 35px !important;
 .m10{
     margin: 10px;
 }
+
+#client_carousel .carousel-control {
+    width: 5%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    background-image: none;
+    color: rgb(114, 114, 114);
+
+}
+#client_carousel .carousel {
+    padding-top: 1em;
+}
+
+#service::before, #technologies::before, #client::before, #career::before, #contact::before { 
+  content: "";
+  display: inline-block;
+  height: 105px;
+  margin-top: -105px;
+}
+
