@@ -141,7 +141,7 @@ border: none;
 	border-bottom:4px solid #1fcdff;
 	font-family: 'Open Sans', sans-serif;
 	font-size:100px;
-	font-weight:700;
+	font-weight:900;
 	letter-spacing: -2px;
 }
 
@@ -268,14 +268,14 @@ border: none;
 	letter-spacing: 1px;
 	font-family:  'Armata', sans-serif;
 	font-size:37px;
-	font-weight:400;
+	font-weight:900;
 	color:#2f2f2f;
 }
 .project h4{
 	margin-left: -5px;
 	font-family:  'Armata', sans-serif;
 	font-size:20px;
-	font-weight:300;
+	font-weight:900;
 	color:#2f2f2f;
 }
 .project p{
@@ -295,14 +295,14 @@ border: none;
 	text-align:center;
 	font-family:  'Armata', sans-serif;
 	font-size:28px;
-	font-weight:400;
+	font-weight:900;
 }
 .cBusiness h4{
 	margin-top: 16px;
 	text-align:center;
 	font-family:  'Armata', sans-serif;
 	font-size:16px;
-	font-weight:300;
+	font-weight:900;
 }
 /**/
 .centPic{
@@ -395,7 +395,7 @@ border: none;
 	margin-top: 17px;
 	font-family:  'Armata', sans-serif;
 	font-size:20px;
-	font-weight:300;
+	font-weight:900;
 }
 .Fresh p{
 	font-family:  'Armata', sans-serif;
@@ -441,7 +441,7 @@ border: none;
 	font-size:28px;
 	color:#2f2f2f;
 	font-family:  'Armata', sans-serif;
-	font-weight: 400;
+	font-weight: 900;
 }
 .wwa h4{
 	margin-top: 15px;
@@ -611,7 +611,7 @@ border: none;
 	font-size:28px;
 	color: #2f2f2f;
 	font-family:  'Armata', sans-serif;
-	font-weight: 400;
+	font-weight: 900;
 }
 .about h3{
 	margin-top: 51px;
@@ -790,7 +790,7 @@ border: none;
 	font-size: 13px;
 	text-align:center;
 	font-family: 'Armata', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 }
 .cBtn ul li:hover{
 	cursor:pointer;
@@ -832,7 +832,7 @@ border: none;
 	font-size: 13px;
 	text-align:center;
 	font-family: 'Armata', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	
 	//margin-bottom: 15px;
 	//margin-right: 10px;
@@ -978,7 +978,7 @@ border: none;
 .cBtn .dowbload a, .cBtn .buy a{
 	font-size: 14px;
 	font-family: 'Armata', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 }
 .cBtn .buy{
 	box-shadow: 0px 2px 0px 0px #179abf;
@@ -1279,7 +1279,7 @@ textarea {
 }
 .forma .cBtn .clear  a, .cBtn .send a{
 	font-family: 'Armata', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 }
 .forma .cBtn .send{
 	box-shadow: 0px 2px 0px 0px #179abf;
@@ -1387,7 +1387,7 @@ textarea {
 	text-align:center;
 	color: #fff;
 	font-family: 'Armata', sans-serif;
-	font-weight: 400;
+	font-weight: 900;
 }
 .line6 .Ama p{
 	font-size: 16px;
@@ -1476,7 +1476,7 @@ textarea {
 	margin-top: 159px;
 	font-size: 28px;
 	font-family: 'Armata', sans-serif;
-	font-weight: 400;
+	font-weight: 700;
 	color: #fff;
 	text-align: center;
 	margin-bottom: 17px;
