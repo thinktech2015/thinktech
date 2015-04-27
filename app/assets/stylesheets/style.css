@@ -178,6 +178,7 @@ border: none;
 	
 	 .slicknav_menu {
 		display:block;
+
 	}
 	.about p{
 		text-align: justify;
@@ -657,7 +658,7 @@ border: none;
 	overflow: auto;
 	margin: auto;
 	position: absolute;
-	top: 31px;
+	top: 94px;
 	left: 0;
 	bottom: 0;
 	right: 0;
@@ -2079,14 +2080,16 @@ margin-bottom: 35px !important;
 
 .client_logo{
     width: 220px;
-    height: 120px;
+    height: 110px;
 }
 
 .p45{
     padding-top: 45px;
     padding-bottom: 15px;
 }
-
+.p70{
+    padding-top: 70px;
+}
 .m10{
     margin: 10px;
 }
