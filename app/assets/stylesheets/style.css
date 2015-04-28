@@ -1287,6 +1287,7 @@ textarea {
 	background:#1fcdff ;
 }
 .forma .cBtn .send:hover{
+	color: #fff;
 	background:#2f2f2f;
 	box-shadow: 0px 2px 0px 0px #000 ;
 }
@@ -2070,6 +2071,10 @@ margin-bottom: 35px !important;
  		General
 ####################*/
 
+.pad_top1 {
+	padding-top: 1em;
+}
+
 .mar_topm10p {
 	margin-top: -20px;
 }
@@ -2106,10 +2111,5 @@ margin-bottom: 35px !important;
     padding-top: 1em;
 }
 
-#service::before, #technologies::before, #client::before, #career::before, #contact::before { 
-  content: "";
-  display: inline-block;
-  height: 105px;
-  margin-top: -105px;
-}
+
 
