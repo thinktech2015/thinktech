@@ -1,7 +1,15 @@
 Thinktech::Application.routes.draw do
 
-  root 'static_pages#index'
+  devise_for :bloggers
+  resources :articles
+
+  mount Ckeditor::Engine => '/ckeditor'
+  resources :users
+
  
+  
+  root 'static_pages#index'
+  
   match '/', to: 'static_pages#index', via: 'get'
   match '/help', to: 'static_pages#help', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.

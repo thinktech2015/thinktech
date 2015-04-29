@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://plus.google.com/104929529486535940210" rel="publisher" />
-        <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="/assets/font-awesome.css">
@@ -926,20 +926,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-xs-12 forma">
-					<form>
-						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
-						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
-						<input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/>
-						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message *'></textarea>
-						<div class="cBtn col-xs-12">
-							<ul>
-								<li class="clear"><a href="#"><i class="fa fa-times"></i>Clear Form</a></li>
-								<li class="send"><a href="#"><i class="fa fa-share"></i>Send Message</a></li>
-							</ul>
-						</div>
-					</form>
+
+					<%= form_for @user, html: {multipart: :true } do |f| %>
+					
+					 <div class="form-group">
+					    <%= f.text_field :name, type:"text", tabindex: "1", class: "col-md-6 col-xs-12 name", placeholder: 'Name *',  required: true  %>
+					  </div>
+					  <div class="form-group">					    
+					    <%= f.text_field :email, type:"email", tabindex: "2", class: "col-md-6 col-xs-12 Email",  placeholder: 'Email *',  required: true  %>
+					  </div>
+					  <div class="form-group">
+					    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "col-md-12 col-xs-12 Subject", placeholder: 'Phone number *', required: true  %>
+					  </div>
+					  
+					  <div class="form-group">
+					    <%= f.text_area :message, type:"text", tabindex: "4", class: "col-md-12 col-xs-12 Message",  placeholder: 'Write your message', rows: "8"  %>
+					  </div>
+					  <div class="row">
+						  <div class="cBtn col-xs-12">
+						  	<%= f.submit "Clear Form", type: :reset, tabindex: "5", :class => 'send fa fa-times' %>
+							<%= f.submit 'Send Message', tabindex: "6", :class => 'send fa fa-share' %>
+						  </div>
+					  </div>
+
+					<% end %>
 				</div>
-				<div class="col-md-3 col-xs-12 cont">
+				<div class="col-md-3 col-xs-12 cont pad_top1">
 					<ul>
 						<li><i class="fa fa-home"></i> Suite# 1000, 888 3st SW</li>
 						<li><i class="fa fa-phone"></i>+1 403 462 0868</li>
@@ -954,8 +966,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="line6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d48386.401887313725!2d-73.9407136!3d40.7147117!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1402409149092" width="100%" height="750" frameborder="0" style="border:0"></iframe>			
+		<div class="line6">					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.4320712041654!2d-114.0696701!3d51.04510930000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffcc79191d9%3A0x24ed4a97bdfe119c!2s888+3+St+SW%2C+Calgary%2C+AB+T2P+1C9%2C+Canada!5e0!3m2!1sen!2sin!4v1430207277760" width="100%" height="750" frameborder="0" style="border:0"></iframe>		
 		</div>
 		<div class="container">
 			<div class="row ftext">
