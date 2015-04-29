@@ -2075,6 +2075,10 @@ margin-bottom: 35px !important;
 	padding-top: 1em;
 }
 
+.pad_bot5 {
+	padding-bottom: 5em;
+}
+
 .mar_topm10p {
 	margin-top: -20px;
 }
@@ -2111,5 +2115,52 @@ margin-bottom: 35px !important;
     padding-top: 1em;
 }
 
+.blog h2{
+	color: #3373CA;
+	font-family: 'Open Sans', sans-serif;
+	font-size:30px;
+	font-weight:900;
+	letter-spacing: 0;
+}
 
+.entry-meta {
+    border-radius: 5px;
+    overflow: hidden;
+    background: #337ab7;
+    border-top: 1px solid #fff;
+    border-bottom: 5px solid #4e4e4e;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
 
+#blog_hr hr {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+
+.lineBlack_blog{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	background:#101010;
+}
+
+#blog_footer .downLine {
+	margin-top: 25px;
+}
+
+#blog_footer .lineBlack_blog {
+	height: 30%;
+}
+
+.minh {
+	min-height: 360px;
+}
