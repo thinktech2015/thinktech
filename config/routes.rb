@@ -11,7 +11,6 @@ Thinktech::Application.routes.draw do
   root 'static_pages#index'
   
   match '/', to: 'static_pages#index', via: 'get'
-  match '/help', to: 'static_pages#help', via: 'get'
   match '/delete', to: 'articles#delete_article', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
