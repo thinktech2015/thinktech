@@ -1,2 +1,45 @@
-<%= "Editing #{@article.title}" %>
-<%= render "form" %>
+
+<% if blogger_signed_in? %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% meta title: "Blog | ThinkTech"      
+  %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+</head>
+
+<body>
+
+    <div id="home">
+        <div class="headerLine mar_topm10p">
+        <%= render "menu" %>
+            <div class="container pad_bot5">
+                <div class="row wrap">
+                    <div class="col-xs-12 blog text-center">
+                        <h2>BLOG</h2>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="container minh pad_bot5">
+            <div class="row">
+                <div class="col-xs-12 blog text-center">
+                    <h2 id="col_black"><%= "Editing #{@article.title}" %></h2>
+                </div>
+                
+                <div class="col-xs-12">
+                    <%= render "form" %>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
+
+<% end %>

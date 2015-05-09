@@ -1,7 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-		<title>ThinkTech</title>
+		<% meta title: "ThinkTech | Websites and Apps",
+          description: ""          
+  %>
+  <% metamagic keywords: [:keywords, "", "", "", "", ""] %>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://plus.google.com/104929529486535940210" rel="publisher" />
@@ -52,33 +55,8 @@
     
     <div id="home">
     	<div class="headerLine mar_topm10p">
-	<div id="menuF" class="default">
-		<div class="container">
-			<div class="row">
-				<div class="logo col-xs-4 col-md-4">
-					<div>
-						<a href="/">
-							<img class="logo_width" src="/assets/ThinkTech_white.png">
-						</a>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="navmenu"style="text-align: center;">
-						<ul id="menu">
-							<li class="active" ><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#service">Services</a></li>
-							<li><a href="#technologies">Technologies</a></li>
-							<li><a href="#client">Clients</a></li>
-							<!--<li><a href="#career">Career</a></li>-->
-							<li class="last"><a href="#contact">Contact</a></li>
-							<!--li><a href="#features">Features</a></li-->
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
+	<%= render "articles/menu" %>
 		<div class="container">
 			<div class="row wrap">
 				<div class="col-md-12 gallery"> 
@@ -1020,17 +998,17 @@
 						<!--input  id="searchPattern" type="search" name="pattern" value="Search the Site" onblur="if(this.value=='') {this.value='Search the Site'; }" onfocus="if(this.value =='Search the Site' ) this.value='';this.style.fontStyle='normal';" style="font-style: normal;"/-->
 						<input  id="searchPattern" type="search" placeholder="Search the Site"/><i class="glyphicon glyphicon-search" style="font-size: 13px; color:#a5a5a5;" id="iS"></i>
 					</div>
-					<div class="col-md-6 text-left copy">
+					<div class="col-md-4 text-left copy">
 						<p>Copyright &copy; 2015 ThinkTech. All Rights Reserved.</p>
 					</div>
-					<div class="col-md-6 text-right dm">
+					<div class="col-md-8 text-right dm">
 						<ul id="downMenu">
 							<li class="active" ><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#service">Services</a></li>
 							<li><a href="#technologies">Technologies</a></li>
 							<li><a href="#client">Clients</a></li>
-							<li><a href="#career">Career</a></li>
+							<li><a href="/articles">Blog</a></li>
 							<li class="last"><a href="#contact">Contact</a></li>
 							<!--li><a href="#features">Features</a></li-->
 						</ul>

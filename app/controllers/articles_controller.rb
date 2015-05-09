@@ -1,14 +1,18 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.order("created_at DESC")
+    @articles = Article.all
+    @articles = Article.paginate(:page => params[:page], :per_page => 5).order('created_at DESC')
+    render :layout => 'blog' 
   end
 
   def show
     @article = Article.find(params[:id])
+    render :layout => 'blog'
   end
 
   def new
     @article = Article.new
+    render :layout => 'blog'
   end
 
   def create
@@ -22,6 +26,7 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
+    render :layout => 'blog'
   end
 
   def update
@@ -31,6 +36,12 @@ class ArticlesController < ApplicationController
     else
       render action: "edit"
     end
+  end
+
+  def delete_article
+    @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to articles_path    
   end
 
 private

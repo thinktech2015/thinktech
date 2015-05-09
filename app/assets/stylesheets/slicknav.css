@@ -59,8 +59,10 @@
   /*background-color: #f5f5f5;*/
 }
 .slicknav_menu {
-	background:#101010;
+	/*background:#101010;*/
 	padding:5px;
+	background: url(../assets/ThinkTech_white.png) no-repeat #101010;
+	background-size: 120px 60px;
 	
 }
 .slicknav_nav {
