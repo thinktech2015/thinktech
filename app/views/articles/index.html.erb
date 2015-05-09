@@ -16,69 +16,69 @@
     
     <div id="home">
     	<div class="headerLine mar_topm10p">
-	<%= render "menu" %>
-		<div class="container pad_bot5">
-			<div class="well minh">
-			<div class="row wrap">
+		<%= render "menu" %>
+			<div class="container pad_bot5">
+				<div class="row wrap">
 
 				<div class="col-xs-12 blog text-center">
 					<h2>BLOG</h2>
 				</div>
 				<div class="col-sm-8">
 				</div>
-				<div class="col-sm-4 text-right">
+				<div class="col-sm-4 text-right col_white">
 	                <% if blogger_signed_in? %>
 	                <p><b><%= current_blogger.email %></b></p>
 	                <h4><b><%= link_to "New Article", new_article_path %></b></h4>               
 	                <p><b><%= link_to 'Logged In [click to logout]', destroy_blogger_session_path, :method => :delete %></b></p>                
 	                <% end %>
-	            </div>
-		
+	            </div>		
+				
+                </div>
+
+			</div>
+		</div>
+		<div class = "container minh">
+			<div class= "row">
 				<div class="col-sm-12">
-                 	<% @articles.each do |article| %>
-                    <div class="blog-item">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-2 text-center">
-                                <h2 class="entry-meta">
-                                    <span><%= article.created_at.strftime("%Y %B %d, %H:%M:%S") %></span>
-                                </h2>
-                            </div>
-                                
-                            <div class="col-xs-12 col-sm-10">
+		         	<% @articles.each do |article| %>
+		            <div class="blog-item">
+		                <div class="row">
+		                    <div class="col-xs-12 col-sm-2 text-center">
+		                        <h2 class="entry-meta">
+		                            <span><%= article.created_at.strftime("%Y %B %d, %H:%M:%S") %></span>
+		                        </h2>
+		                    </div>
+		                        
+		                    <div class="col-xs-12 col-sm-10">
 
-                            <h2><%= link_to  article.title.html_safe, article_path(article.id) %></h2>
+		                    <h2><%= link_to  article.title.html_safe, article_path(article.id) %></h2>
 
-                                <p><%= article.body.html_safe %></p>
+		                        <p><%= article.body.html_safe %></p>
 
-                                <%= link_to "Read More ".html_safe + "<i class='fa fa-angle-right'></i>".html_safe, article_path(article.id), class: "btn btn-primary" %>
-                                <% if blogger_signed_in? %>
-                                <%= link_to "Edit Article", edit_article_path(article), class: "btn btn-primary" %>
-                                <%= link_to "Delete Article", delete_path(id: article.id), data:{ confirm: 'Are you sure?'}, class: "btn btn-primary" %>
-                                <% end %>                                   
-                            
-	                            <div id="blog_hr">
+		                        <%= link_to "Read More ".html_safe + "<i class='fa fa-angle-right'></i>".html_safe, article_path(article.id), class: "btn btn-primary" %>
+		                        <% if blogger_signed_in? %>
+		                        <%= link_to "Edit Article", edit_article_path(article), class: "btn btn-primary" %>
+		                        <%= link_to "Delete Article", delete_path(id: article.id), data:{ confirm: 'Are you sure?'}, class: "btn btn-primary" %>
+		                        <% end %>                                   
+		                    
+		                        <div id="blog_hr">
 								  <% if article != @articles.last %>
 								  <hr />
 								  <% end %>
 								</div>
 							</div>
-                        </div>    
-                    </div>
-                    <% end %>
-                       
+		                </div>    
+		            </div>
+		            <% end %>
+		                       
 
-                    <div class="pagination">
-                        <%= will_paginate @articles %>
-                    </div>
-                    
-                </div>
-                </div>
-
-			</div>
-		</div>
-	</div>
-		
-		
+		            <div class="pagination">
+		                <%= will_paginate @articles %>
+		            </div>
+		            
+		        </div>
+        	</div>
+		</div>		
 		
     </div>
 

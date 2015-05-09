@@ -2083,6 +2083,18 @@ margin-bottom: 35px !important;
 	margin-top: -20px;
 }
 
+.col_white {
+	color: #ffffff;
+}
+
+.col_white a {
+	color: #ffffff;
+}
+
+#col_black {
+	color: black;
+}
+
 .logo_width{
     width: 240px;
 }
@@ -2116,7 +2128,7 @@ margin-bottom: 35px !important;
 }
 
 .blog h2{
-	color: #3373CA;
+	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	font-size:30px;
 	font-weight:900;
@@ -2162,5 +2174,5 @@ margin-bottom: 35px !important;
 }
 
 .minh {
-	min-height: 360px;
+	min-height: 320px;
 }
