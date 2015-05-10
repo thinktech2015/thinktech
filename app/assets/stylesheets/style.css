@@ -668,7 +668,7 @@ border: none;
 	//top: 55px;
 	content: '';
 	z-index: 30;
-	background: url(../assets/horL.png) no-repeat;
+	/*background: url(../assets/horL.png) no-repeat;*/
 }
 /**/
 .line3{
