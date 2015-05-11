@@ -12,6 +12,11 @@ Thinktech::Application.routes.draw do
   
   match '/', to: 'static_pages#index', via: 'get'
   match '/delete', to: 'articles#delete_article', via: 'get'
+  match '/service-web', to: 'static_pages#service_web', via: 'get', as: :service_web
+  match '/service-app', to: 'static_pages#service_app', via: 'get', as: :service_app
+  match '/service-seo', to: 'static_pages#service_seo', via: 'get', as: :service_seo
+  match '/service-custom', to: 'static_pages#service_custom', via: 'get', as: :service_custom
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
