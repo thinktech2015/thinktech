@@ -36,8 +36,6 @@ GEM
     arel (4.0.2)
     bcrypt (3.1.9)
     bcrypt (3.1.9-x86-mingw32)
-    bcrypt-ruby (3.1.5)
-      bcrypt (>= 3.1.3)
     builder (3.1.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -140,7 +138,7 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.5.3)
       coffee-rails
-    tzinfo (0.3.43)
+    tzinfo (0.3.44)
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
@@ -153,7 +151,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bcrypt-ruby (~> 3.1.2)
   ckeditor!
   coffee-rails (~> 4.0.0)
   devise
