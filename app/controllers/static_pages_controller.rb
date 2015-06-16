@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
   
   def index
   	@user = User.new
+    @search = Search.new
   end
 
   def service_web
