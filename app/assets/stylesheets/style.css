@@ -2177,3 +2177,21 @@ margin-bottom: 35px !important;
 	min-height: 320px;
 }
 
+#menu li ul li {
+	
+-webkit-font-smoothing: antialiased;
+  border-right: none;
+  padding-left: 17px;
+  padding-right: 16px;
+  float: left;
+  font-family: 'Armata', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#menu li ul li a {
+	color: #000;
+	}
