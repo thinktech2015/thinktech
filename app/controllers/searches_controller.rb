@@ -6,8 +6,8 @@ class SearchesController < ApplicationController
     respond_to do |format|
       if @search.save
         
-         #UserMailer.welcome_email(@search).deliver
-         #UserMailer.query_mail(@search).deliver
+         SearchMailer.welcome_email(@search).deliver
+         SearchMailer.query_mail(@search).deliver
 
         format.html { redirect_to :back }
         #flash.now[:notice] = 'Thank you for your message. We will contact you soon!'
