@@ -2075,6 +2075,10 @@ margin-bottom: 35px !important;
 	padding-top: 1em;
 }
 
+.pad_top2 {
+	padding-top: 2em;
+}
+
 .pad_bot5 {
 	padding-bottom: 5em;
 }
@@ -2175,5 +2179,36 @@ margin-bottom: 35px !important;
 
 .minh {
 	min-height: 320px;
+}
+
+#menu li ul li {
+	
+  -webkit-font-smoothing: antialiased;
+   border-right: none;
+   padding-left: 0;
+   padding-right: 0;
+   float: left;
+   font-family: 'Armata', sans-serif;
+   font-size: 14px;
+   color: #ffffff;
+   list-style: none;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+#menu li ul li :hover {
+	background: none;
+}
+
+#menu li ul li a {
+	color: #000;
+}
+
+#menu .dropdown-menu {
+	margin:0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
 }
 
