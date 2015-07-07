@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     render :layout => 'blog'
   end
 
@@ -25,12 +25,12 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     render :layout => 'blog'
   end
 
   def update
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     if @article.update_attributes(article_params)
       redirect_to articles_path, notice: "The article has been successfully updated."
     else
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
   end
 
   def delete_article
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     @article.destroy
     redirect_to articles_path    
   end
@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
 private
 
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :slug)
   end
   
 end
