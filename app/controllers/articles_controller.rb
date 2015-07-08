@@ -17,9 +17,19 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    if @article.save
-      redirect_to articles_path, notice: "The article has been successfully created."
-    else
+    @articles = Article.all
+    count = 0
+    @articles.each do |a|
+      if @article.slug == a.slug
+        count = 1
+      end
+    end
+    if count == 0
+      @article.save
+      redirect_to articles_path
+    elsif count == 1
+      flash[:notice] =  " * Change the url name"
+      flash.discard(:notice)
       render action: "new"
     end
   end
