@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     render :layout => 'blog'
   end
 
@@ -17,20 +17,30 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    if @article.save
-      redirect_to articles_path, notice: "The article has been successfully created."
-    else
+    @articles = Article.all
+    count = 0
+    @articles.each do |a|
+      if @article.slug == a.slug
+        count = 1
+      end
+    end
+    if count == 0
+      @article.save
+      redirect_to articles_path
+    elsif count == 1
+      flash[:notice] =  " * Change the url name"
+      flash.discard(:notice)
       render action: "new"
     end
   end
 
   def edit
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     render :layout => 'blog'
   end
 
   def update
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     if @article.update_attributes(article_params)
       redirect_to articles_path, notice: "The article has been successfully updated."
     else
@@ -39,7 +49,7 @@ class ArticlesController < ApplicationController
   end
 
   def delete_article
-    @article = Article.find(params[:id])
+    @article = Article.friendly.find(params[:id])
     @article.destroy
     redirect_to articles_path    
   end
@@ -47,7 +57,7 @@ class ArticlesController < ApplicationController
 private
 
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :slug)
   end
   
 end
