@@ -4,7 +4,7 @@ development:
   :Domain: mail.google.com
   :authentication: plain
   :user_name: ashish@thethinktech.com
-  :password: ashish@new123
+  :password: think@ashish22
   :enable_starttls_auto: true        
 
 production:
@@ -13,5 +13,5 @@ production:
   :Domain: mail.google.com
   :authentication: plain
   :user_name: ashish@thethinktech.com
-  :password: ashish@new123
+  :password: think@ashish22
   :enable_starttls_auto: true 
