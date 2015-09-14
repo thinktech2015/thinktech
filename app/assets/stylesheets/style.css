@@ -203,7 +203,7 @@ border: none;
 		margin-bottom:0;
 	}
 	.camera_caption h2{
-		font-size: 65px;
+		font-size: 50px;
 	}
 	.about h3{
 		text-align:center;
@@ -2077,6 +2077,10 @@ margin-bottom: 35px !important;
 
 .pad_top2 {
 	padding-top: 2em;
+}
+
+.pad_bot2 {
+	padding-bottom: 2em;
 }
 
 .pad_bot5 {

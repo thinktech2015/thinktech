@@ -1,17 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  	<head>
-
-		<% meta title: "Blog | ThinkTech",
+	<% meta title: "Blog | ThinkTech",
           description: ""          
   %>
-  <% metamagic keywords: [:keywords, "blog", "blog thinktech", " blog calgary", "blog thintech calgary", "ThinkTech Blog"] %>
-
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
+  	<% metamagic keywords: [:keywords, "blog", "Blog thinktech", "blog thethinktech", "thinktech", "blog thinktech calgary", "thinktech calgary", "blog calgary ", "thethinktech calgary blog", "thinktech calgary"] %>
     
     <div id="home">
     	<div class="headerLine mar_topm10p">
@@ -26,9 +16,9 @@
 				</div>
 				<div class="col-sm-4 text-right col_white">
 	                <% if blogger_signed_in? %>
-	                <p><b><%= current_blogger.email %></b></p>
-	                <h4><b><%= link_to "New Article", new_article_path %></b></h4>               
-	                <p><b><%= link_to 'Logged In [click to logout]', destroy_blogger_session_path, :method => :delete %></b></p>                
+	                <strong><%= current_blogger.email %></strong>
+	                <h4><strong><%= link_to "New Article", new_article_path %></strong></h4>
+	                <strong><%= link_to 'Logged In [click to logout]', destroy_blogger_session_path, :method => :delete %></strong>                
 	                <% end %>
 	            </div>		
 				
@@ -52,7 +42,7 @@
 
 		                    <h2><%= link_to  article.title.html_safe, article_path(article.slug) %></h2>
 
-		                        <p><%= article.body.html_safe %></p>
+		                        <%= article.body.html_safe %>
 
 		                        <%= link_to "Read More ".html_safe + "<i class='fa fa-angle-right'></i>".html_safe, article_path(article.slug), class: "btn btn-primary" %>
 		                        <% if blogger_signed_in? %>
@@ -80,8 +70,3 @@
 		</div>		
 		
     </div>
-
-    
-	</body>
-	
-</html>

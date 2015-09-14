@@ -1,19 +1,7 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <% meta title: "Blog | ThinkTech",
           description: ""          
   %>
-  <% metamagic keywords: [:keywords, "", "", "", "", ""] %>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-</head>
-
-<body>
+    <% metamagic keywords: [:keywords, "blog", "Blog thinktech", "blog thethinktech", "thinktech", "blog thinktech calgary", "thinktech calgary", "blog calgary ", "thethinktech calgary blog", "thinktech calgary"] %>
 
     <div id="home">
         <div class="headerLine mar_topm10p">
@@ -37,12 +25,9 @@
                         
                     <div class="col-xs-12 col-sm-10">
                         <h2 class="readMore"><%= @article.title.html_safe %></h2>
-                        <p><%= @article.body.html_safe %></p>
+                        <%= @article.body.html_safe %>
                     </div> 
                 </div>
             </div>
         </div>
     </div>
-   
-</body>
-</html>
