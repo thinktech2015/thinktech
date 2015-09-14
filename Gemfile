@@ -21,6 +21,7 @@ gem 'devise'
 gem 'will_paginate'
 gem 'metamagic'
 gem 'friendly_id', '~> 5.1.0'
+gem 'bootstrap-material-design'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
