@@ -3,36 +3,38 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="coverage" content="Worldwide" />
+<meta name="page-topic" content="Website Design, Development and SEO in Calgary" />
+<meta name="allow-search" content="yes" />
+<meta name="copyright" content="Thethinktech"/>
+<meta name="robots" content="index, follow"/>
+<meta name="rating" content="safe for kids"/>
+<meta name="googlebot" content="index, follow"/>
+<meta name="yahooseeker" content="index, follow"/>
+<meta name="msnbot" content="index, follow" />
+<meta name="Rating" content="General" />
+<meta name="category" content="Website Design, Development and SEO"/>
+<meta name="author" content="www.thethinktech.com"/>
+<meta name="generator" content="http://www.thethinktech.com"/>
+<meta name="reply-to" content="ashish@thethinktech.com"/>
+<meta name="allow-search" content="yes" />
+<meta name="revisit-after" content="daily" />
+<meta name="distribution" content="global"/>
+<meta name="expires" content="never"/>
+<meta name="language" content="english"/>
+<meta name="geo.region" content="Calgary-Alberta- Canada"/>
+<meta name="geo.placename" content="Calgary-Alberta- Canada"/>
+<meta name="geo.position" content="51.0453198,-114.0692226"/>
+<meta name="ICBM" content="51.0453198,-114.0692226"/>
+<base href="http://www.thethinktech.com">
 <link rel="icon" type="image/png" href="http://www.thethinktech.com/assets/thinkthech_fav.png">
 <%= metamagic %>
-  
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  <meta name="coverage" content="Worldwide" />
-  <meta name="page-topic" content="Website Design, Development and SEO in Calgary" />
-  <meta name="allow-search" content="yes" />
-  <meta name="copyright" content="Thethinktech"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="rating" content="safe for kids"/>
-  <meta name="googlebot" content="index, follow"/>
-  <meta name="yahooseeker" content="index, follow"/>
-  <meta name="msnbot" content="index, follow" />
-  <meta name="Rating" content="General" />
-  <meta name="category" content="Website Design, Development and SEO"/>
-  <meta name="author" content="www.thethinktech.com"/>
-  <meta name="generator" content="http://www.thethinktech.com"/>
-  <meta name="reply-to" content="ashish@thethinktech.com"/>
-  <meta name="allow-search" content="yes" />
-  <meta name="revisit-after" content="daily" />
-  <meta name="distribution" content="global"/>
-  <meta name="expires" content="never"/>
-  <meta name="language" content="english"/>
-  <meta name="geo.region" content="Calgary-Alberta- Canada"/>
-  <meta name="geo.placename" content="Calgary-Alberta- Canada"/>
-  <meta name="geo.position" content="51.0453198,-114.0692226"/>
-  <meta name="ICBM" content="51.0453198,-114.0692226"/>
-  <base href="http://www.thethinktech.com">
+
+<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+
+<%= yield :link_script %>
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -55,6 +57,18 @@ $.src="//v2.zopim.com/?36Jo9nvoXj3bftBWG9FJh34jqBw1Eudn";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
+
+<!-- google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62321712-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
