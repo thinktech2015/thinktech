@@ -18,6 +18,16 @@ Thinktech::Application.routes.draw do
   match '/service-seo', to: 'static_pages#service_seo', via: 'get', as: :service_seo
   match '/service-custom', to: 'static_pages#service_custom', via: 'get', as: :service_custom
 
+  match '/3d-product-catalogue-app', to: 'static_pages#product_3dproduct', via: 'get', as: :product_3dproduct
+  match '/appointment-scheduler-app', to: 'static_pages#product_appointment', via: 'get', as: :product_appointment
+  match '/hr-industry-app', to: 'static_pages#product_hr_industry', via: 'get', as: :product_hr_industry
+  match '/restaurant-app', to: 'static_pages#product_restaurant', via: 'get', as: :product_restaurant
+
+  match '/cloud-platforms', to: 'static_pages#technology_cloud', via: 'get', as: :technology_cloud
+  match '/web-cms', to: 'static_pages#technology_cms', via: 'get', as: :technology_cms
+  match '/mobile', to: 'static_pages#technology_mobile', via: 'get', as: :technology_mobile
+  match '/web-technologies', to: 'static_pages#technology_web', via: 'get', as: :technology_web
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

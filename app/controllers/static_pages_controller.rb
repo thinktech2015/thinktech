@@ -21,4 +21,37 @@ class StaticPagesController < ApplicationController
   	render :layout => 'blog'
   end
 
+  def product_3dproduct
+    render :layout => 'blog'
+  end
+
+  def product_appointment
+    render :layout => 'blog'
+  end
+
+  def product_hr_industry
+    render :layout => 'blog'
+  end
+
+  def product_restaurant
+    render :layout => 'blog'
+  end
+
+  def technology_cloud
+    render :layout => 'blog'
+  end
+
+  def technology_cms
+    render :layout => 'blog'
+  end
+
+  def technology_mobile
+    render :layout => 'blog'
+  end
+
+  def technology_web
+    render :layout => 'blog'
+  end
+
 end
+
