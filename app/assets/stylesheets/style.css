@@ -2216,3 +2216,9 @@ margin-bottom: 35px !important;
 	display: block;
 }
 
+@media screen and (max-width: 767px){
+	.rpad_top2 {
+		padding-top: 2em;
+	}
+
+}
